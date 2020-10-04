@@ -1,12 +1,4 @@
-const url = new URL("https://osu.ppy.sh/api/v2/users/1/scores/best");
-
-let params = {
-    "include_fails": "0",
-    "mode": "osu",
-    "limit": "12",
-    "offset": "1",
-};
-Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+const url = new URL("https://osu.ppy.sh/api/v2/users/1/osu");
 
 let headers = {
     "Accept": "application/json",
