@@ -47,13 +47,14 @@ body {
     display: flex;
   }
   
-  @media (min-width: 768px);
-  .col-md-6 {
+  @media (min-width: 768px) {
+     .col-md-6 {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      max-width: 50%;
+      max-width: 50%; 
+    }
   }
   
   .col-12 {
