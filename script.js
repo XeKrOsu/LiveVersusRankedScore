@@ -1,3 +1,9 @@
+fetch("https://osu.ppy.sh/api/v2/users/1/osu", {
+    headers: {
+      Authorization: 'Bearer BWzJJTNhoDEgACWDvIH8897nGnAkBBflUkG3vVGE'
+    }
+});
+
 const url = new URL("https://osu.ppy.sh/api/v2/users/1/osu");
 
 let headers = {
