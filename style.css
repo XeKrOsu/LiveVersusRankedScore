@@ -11,8 +11,8 @@ body {
   
   .container {
       width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 0px;
+      padding-left: 0px;
       margin-right: auto;
       margin-left: auto;
   }
@@ -46,23 +46,21 @@ body {
   .row {
     display: flex;
   }
+
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; 
+}
   
-  @media (min-width: 768px) {
-     .col-md-6 {
+  .col-12 {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
-      max-width: 50%; 
-    }
-  }
-  
-  .col-12 {
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
+      max-width: 50%;
   }
   
   .form-row {
