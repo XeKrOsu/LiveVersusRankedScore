@@ -18,11 +18,12 @@
 //.then(response => response.json())
 //.then(json => console.log(json));
 
-const baseURL = "https://osu.ppy.sh/api/get_user?k=4cf18ced7dbee5e604b829e96ba2118a9e3112cd";
+const TOKEN = "4cf18ced7dbee5e604b829e96ba2118a9e3112cd";
 
-let username = "Soulphase";
-let mode = 0;
+function getURL(Username, Mode) {
+    return "https://osu.ppy.sh/api/get_user?k=" + TOKEN + "&u=" + Username + "&m=" + Mode;
+}
 
-let user = JSON.parse(fetch(baseURL + "&u=" + username + "&m=" + mode));
-
-console.log(user);
+fetch(getURL("Soulphase", 0))
+.then(response => response.json())
+.then(json => console.log(json[0].username + " : " + json[0].ranked_score));
