@@ -1,16 +1,23 @@
   html{
-    padding-right: -5px;
-    padding-left: -5px;
     max-width: 100%;
+    animation-delay: 200ms;
   }
   body {
     font-family: 'Rubik', sans-serif;
   }
-  
+
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: pink;
+    transition-delay: 150ms;
+  }
+
   b {
     font-size: 20px;
-    padding: 50px;
-    padding-top: 40px;
+    padding: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
   
@@ -52,7 +59,8 @@
     display: flex;
     text-align: center;
     max-height: 50%;
-    max-width: 50%;
+    max-width: 65%;
+    padding-bottom: 10px;
   }
 
 .col-md-6 {
@@ -61,8 +69,6 @@
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -74,8 +80,6 @@
       -ms-flex: 0 0 75%;
       flex: 0 0 75%;
       width: 100%;
-      padding-right: 12.5%;
-      padding-left: 12.5%;
       margin-right: auto;
       margin-left: auto;
 
@@ -95,8 +99,6 @@
       width: 100%;
       height: calc(1.5em + .75rem + 2px);
       padding: .375rem .75rem;
-      margin-right: 150px;
-      margin-left: 150px;
       font-size: 1rem;
       font-weight: 450;
       line-height: 1.5;
@@ -108,8 +110,6 @@
       transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
 
-  #username{
+  #player_1_input, #player_2_input{
       text-align: center;
-      padding-right: 25px;
-      padding-left: 25px;
   }
