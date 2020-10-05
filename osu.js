@@ -1,4 +1,4 @@
-const TOKEN = "4cf18ced7dbee5e604b829e96ba2118a9e3112cd";
+const TOKEN = "MY_KEY";
 
 var score = [-1, -1];
 
