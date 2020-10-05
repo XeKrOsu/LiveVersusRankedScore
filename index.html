@@ -21,24 +21,35 @@
   </div>
  <hr>
   <div class="row">
-  <div class="col-12 col-md-6">
-    <div class="card m-b-0 m-t-20">
+  <div class="col-12 col-md-6" style="max-width: 100%; margin: auto; padding: 10px;">
+    <div class="card">
       <form>
-        <div class="col-auto" style="width: 300px;">
-          <input type="text" id="username" name="username" class="form-control" placeholder="Put the username or user ID">
+        <div class="col-auto" style="max-width: 50%; height: 450px; margin: auto;">
+          <input type="text" id="player_1_input" name="username" class="form-control" placeholder="Put the username or user ID">
+          <a target="_blank" id="player_name_1"><img id="player_image_1"></a>
+          <p id="player_score_1"></p>
         </div>  
       </form>
     </div>
   </div>
-  <div class="col-12 col-md-6">
-    <div class="card m-b-0 m-t-20">
+  <div class="col-12 col-md-6" style="max-width: 100%; margin: auto; padding: 10px;">
+    <div class="card">
       <form>
-        <div class="col-auto" style="width: 300px;">
-          <input type="text" id="username" name="username" class="form-control" placeholder="Put the username or user ID">
+        <div class="col-auto" style="max-width: 50%; height: 450px; margin: auto;">
+          <input type="text" id="player_2_input" name="username" class="form-control" placeholder="Put the username or user ID">
+          <a target="_blank" id="player_name_2"><img id="player_image_2"></a>
+          <p id="player_score_2"></p>
         </div>  
       </form>
     </div>
   </div>
 </div>
+<div class="card" style="max-width: 50%; height: 175px; margin: auto;">
+  <p>
+    <span id="desc">Ranked Score Difference</span>
+  </p>
+  <p id="ranked_score_difference"></p>
+</div>
+<script src="osu.js"></script>
 </body>
 </html>
