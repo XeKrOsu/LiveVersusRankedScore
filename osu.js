@@ -1,4 +1,4 @@
-const TOKEN = "MY_KEY";
+const TOKEN = process.env.REACT_APP_API_KEY;
 
 var score = [-1, -1];
 
